@@ -17,6 +17,7 @@
         <button id="b" onclick="check()">Check</button><br>
         <p id="R">Result</p>
         <h3 id="S">Score:10</h3>
+        <h3 id="l">Last game : </h3>
     </center>
 
 </body>
@@ -24,6 +25,7 @@
     var input = document.getElementById("i")
     var score = document.getElementById("S")
     var result = document.getElementById("R")
+    var lastgame = document.getElementById("l")
     var bs = 10
 
     function check() {
@@ -36,6 +38,8 @@
             bs = bs + 1
             score.textContent = "Total Score :" + bs
             result.textContent = "Correct"
+            lastgame.textContent = "Last Game : Win"
+
 
         }
         else {
@@ -45,6 +49,7 @@
             console.log(tscore)
             console.log(bs)
             result.textContent = "Wrong"
+            lastgame.textContent = "Last Game : lose"
         }
         if (bs == 0) {
             alert("Better Luck Next time")
