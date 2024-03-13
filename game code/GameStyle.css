@@ -1,0 +1,50 @@
+body {
+    background-color: rgba(228, 187, 7, 0.87);
+}
+
+h1 {
+    background-color: rgb(236, 123, 231);
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    color: rgb(246, 244, 248);
+}
+
+#i {
+
+    border-radius: 20px;
+    text-align: center;
+    border: 0;
+    background-color: aqua;
+    width: 60px;
+}
+
+#R {
+    display: inline-block;
+    background-color: rgb(236, 89, 192);
+    border-radius: 15px;
+    padding: 5px 20px 5px 20px;
+
+}
+
+#S {
+    font-size: xx-large;
+}
+
+#b {
+    border-radius: 100%;
+    border: 0;
+
+}
+
+#b:hover {
+    background-color: green;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#i:hover {
+
+    background-color: blue;
+    color: rgb(234, 240, 240);
+}

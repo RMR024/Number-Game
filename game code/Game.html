@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>🎲 Guss Number Game</title>
+    <link rel="stylesheet" href="GameStyle.css">
+
+</head>
+
+<body>
+
+
+    <center>
+        <h1>🔢 Guss Number Game </h1>
+        <h3 id="game">Guss Number 1 to 10 ?</h3>
+        <input id="i">
+        <button id="b" onclick="check()">Check</button><br>
+        <p id="R">Result</p>
+        <h3 id="S">Score:10</h3>
+    </center>
+
+</body>
+<script>
+    var input = document.getElementById("i")
+    var score = document.getElementById("S")
+    var result = document.getElementById("R")
+    var bs = 10
+
+    function check() {
+        var computernumber = Math.floor(Math.random() * 10) + 1
+        var usernumber = input.value
+        var tscore = score.textContent
+
+        if (computernumber == usernumber) {
+            console.log("YOU WIN")
+            bs = bs + 1
+            score.textContent = "Total Score :" + bs
+            result.textContent = "Correct"
+
+        }
+        else {
+            console.log("YOU LOSE")
+            bs = bs - 1
+            score.textContent = "Total Score :" + bs
+            console.log(tscore)
+            console.log(bs)
+            result.textContent = "Wrong"
+        }
+        if (bs == 0) {
+            alert("Better Luck Next time")
+            location.reload()
+
+
+        }
+    }
+
+</script>
+
+</html>
