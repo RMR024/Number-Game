@@ -32,13 +32,16 @@
         var computernumber = Math.floor(Math.random() * 10) + 1
         var usernumber = input.value
         var tscore = score.textContent
-
+        lastgame.style.backgroundColor = "blue"
         if (computernumber == usernumber) {
             console.log("YOU WIN")
             bs = bs + 1
             score.textContent = "Total Score :" + bs
             result.textContent = "Correct"
             lastgame.textContent = "Last Game : Win"
+            result.style.backgroundColor = "green"
+
+
 
 
         }
@@ -50,9 +53,13 @@
             console.log(bs)
             result.textContent = "Wrong"
             lastgame.textContent = "Last Game : lose"
+            result.style.backgroundColor = "red"
+
+
         }
         if (bs == 0) {
             alert("Better Luck Next time")
+
             location.reload()
 
 
